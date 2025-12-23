@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Character Counter & Word Counter – Free SEO Writing Tool | TextCounter.pro</title>
+  
+  <meta name="description" content="TextCounter.pro is the #1 professional Online Character Counter and Word Counter. Use our free SEO Content Checker for meta tags, social media posts, and expert copywriting. High-precision online text analysis.">
+  <meta name="keywords" content="online character counter, word counter tool, SEO content checker, copywriting tool, check word count, online text analysis, character limit tool, free writing assistant, ilovepdf alternative for text">
+  <link rel="canonical" href="https://textcounter.pro/" />
+  
+  <meta property="og:title" content="TextCounter.pro – The Best Online Character & Word Counter">
+  <meta property="og:description" content="Precision SEO writing tool for professional character and word counting. 100% Free and Private.">
+  <meta property="og:type" content="website">
+
+  <!-- AdSense Script Placeholder -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root { 
+      --brand: #4f46e5;
+      --brand-hover: #4338ca;
+      --bg-main: #fcfcfd;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --ad-bg: #f8fafc;
+    }
+
+    body { 
+      font-family: 'Plus Jakarta Sans', sans-serif; 
+      background-color: var(--bg-main); 
+      color: var(--text-main);
+    }
+
+    /* ILovePDF Style Hero */
+    .hero-tool-area {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-tool-area { padding: 4rem 1rem; }
+    }
+
+    /* Premium AdSense Containers */
+    .ad-container {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--ad-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: background 0.3s ease;
+    }
+
+    .ad-label {
+      font-size: 9px;
+      font-weight: 700;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      padding: 6px 0;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(0,0,0,0.03);
+      user-select: none;
+    }
+
+    .ad-slot-leaderboard {
+      max-width: 970px;
+      min-height: 110px; /* Reduced shift */
+      margin-bottom: 2rem;
+    }
+
+    .ad-slot-content {
+      max-width: 1000px;
+      min-height: 250px;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .ad-slot-leaderboard { min-height: 140px; }
+      .ad-slot-content { min-height: 280px; }
+    }
+
+    .tool-card {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background: #f8fafc;
+      border-bottom: 1px solid var(--border);
+    }
+
+    @media (min-width: 640px) {
+      .stats-bar { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .stat-item {
+      padding: 1rem;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    @media (min-width: 640px) {
+      .stat-item { border-bottom: none; }
+      .stat-item:last-child { border-right: none; }
+    }
+    
+    .stat-label { font-size: 10px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 4px; }
+    .stat-value { font-size: 20px; font-weight: 800; color: var(--brand); font-variant-numeric: tabular-nums; }
+    @media (min-width: 768px) { .stat-value { font-size: 24px; } }
+
+    .main-textarea {
+      width: 100%;
+      height: 350px;
+      padding: 1.5rem;
+      border: none;
+      font-size: 1.125rem;
+      line-height: 1.7;
+      resize: none;
+      outline: none;
+      color: #334155;
+    }
+    @media (min-width: 768px) {
+      .main-textarea { height: 450px; padding: 2rem; }
+    }
+
+    .action-bar {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media (min-width: 640px) {
+      .action-bar { flex-direction: row; padding: 1rem 2rem; }
+    }
+
+    /* Content Sections */
+    .content-section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1); border-color: var(--brand); }
+
+    .step-circle {
+      width: 40px;
+      height: 40px;
+      background: var(--brand);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .view-section { display: none; }
+    .view-section.active { display: block; }
+
+    /* Standard Responsive AdSense */
+    .adsbygoogle {
+      display: block;
+      width: 100%;
+      background: transparent;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- HEADER -->
+  <header class="h-16 bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-[1200px] h-full mx-auto px-6 flex items-center justify-between">
+      <div class="flex items-center gap-2 cursor-pointer" onclick="switchView('tool')">
+        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+        </div>
+        <span class="text-lg font-extrabold tracking-tighter">TextCounter<span class="text-indigo-600">.pro</span></span>
+      </div>
+      
+      <nav class="hidden md:flex items-center gap-6">
+        <button onclick="switchView('tool')" class="text-sm font-bold text-slate-500 hover:text-indigo-600">Tool</button>
+        <button onclick="switchView('faq')" class="text-sm font-bold text-slate-500 hover:text-indigo-600">FAQ</button>
+        <button onclick="switchView('about')" class="text-sm font-bold text-slate-500 hover:text-indigo-600">About</button>
+        <button onclick="switchView('terms')" class="text-sm font-bold text-slate-500 hover:text-indigo-600">Terms</button>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="btn-copy-header" onclick="document.getElementById('btn-copy').click()" class="hidden sm:block text-xs font-bold text-slate-400 uppercase tracking-widest hover:text-indigo-600">Copy Result</button>
+        <a href="mailto:support@textcounter.pro" class="bg-slate-900 text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-slate-800 transition-all">Support</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO TOOL AREA -->
+    <section id="view-tool" class="view-section active hero-tool-area">
+      <!-- Top Ad Slot -->
+      <div class="ad-container ad-slot-leaderboard">
+         <div class="ad-label">ADVERTISEMENT</div>
+         <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+              data-ad-slot="XXXXXXXXXX"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <div class="max-w-[1000px] mx-auto text-center mb-12">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Free Online Character & <span class="text-indigo-600">Word Counter</span></h1>
+        <p class="text-lg md:text-xl text-slate-500 font-medium">The most accurate SEO content checker for professional copywriting.</p>
+      </div>
+
+      <div class="tool-card">
+        <!-- STATS BAR -->
+        <div class="stats-bar">
+          <div class="stat-item"><span class="stat-label">Words</span><div id="res-words" class="stat-value">0</div></div>
+          <div class="stat-item"><span class="stat-label">Characters</span><div id="res-chars" class="stat-value">0</div></div>
+          <div class="stat-item"><span class="stat-label">Sentences</span><div id="res-sentences" class="stat-value">0</div></div>
+          <div class="stat-item"><span class="stat-label">Reading Time</span><div id="res-time" class="stat-value">0m</div></div>
+        </div>
+
+        <!-- TEXT AREA -->
+        <div class="relative">
+          <textarea id="text-input" class="main-textarea" placeholder="Paste your text here to count characters and words instantly..."></textarea>
+          <div id="drop-overlay" class="absolute inset-0 bg-indigo-600/5 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none transition-all">
+            <span class="text-indigo-600 font-black text-2xl uppercase italic">Drop to Analyze</span>
+          </div>
+        </div>
+
+        <!-- ACTION BAR -->
+        <div class="action-bar">
+          <div class="flex gap-2">
+            <button id="btn-clean" class="px-3 py-1.5 bg-slate-100 text-slate-600 text-xs font-bold rounded-md hover:bg-slate-200 transition-colors">Clean</button>
+            <button id="btn-titlecase" class="px-3 py-1.5 bg-slate-100 text-slate-600 text-xs font-bold rounded-md hover:bg-slate-200 transition-colors">Aa</button>
+            <button id="btn-clear" class="px-3 py-1.5 text-red-400 text-xs font-bold hover:text-red-600 transition-colors">Clear</button>
+          </div>
+          <button id="btn-copy" class="w-full sm:w-auto bg-indigo-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-indigo-700 shadow-lg shadow-indigo-100 transition-all">Copy Text</button>
+        </div>
+      </div>
+
+      <!-- PLATFORM LIMITS DASHBOARD -->
+      <div class="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+        <div class="platform-pill border bg-white rounded-2xl p-6 flex flex-col items-center transition-all duration-300">
+          <span class="text-[10px] font-black uppercase text-slate-400 mb-2">Google Meta</span>
+          <div id="val-google" class="text-2xl font-black font-mono">0 / 160</div>
+        </div>
+        <div class="platform-pill border bg-white rounded-2xl p-6 flex flex-col items-center transition-all duration-300">
+          <span class="text-[10px] font-black uppercase text-slate-400 mb-2">Twitter / X</span>
+          <div id="val-twitter" class="text-2xl font-black font-mono">0 / 280</div>
+        </div>
+        <div class="platform-pill border bg-white rounded-2xl p-6 flex flex-col items-center transition-all duration-300">
+          <span class="text-[10px] font-black uppercase text-slate-400 mb-2">AI Prompt</span>
+          <div id="val-ai" class="text-2xl font-black font-mono">0 / 4000</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO CONTENT SECTIONS -->
+    <section class="content-section">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-slate-900 mb-4">How to use the Word Counter tool?</h2>
+        <p class="text-lg text-slate-500">Simple steps to analyze your text for SEO and readability.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center">
+          <div class="step-circle mx-auto">1</div>
+          <h3 class="font-bold text-lg mb-2">Paste Content</h3>
+          <p class="text-slate-500">Paste your draft directly into the editor or drag and drop a text file.</p>
+        </div>
+        <div class="text-center">
+          <div class="step-circle mx-auto">2</div>
+          <h3 class="font-bold text-lg mb-2">Real-time Check</h3>
+          <p class="text-slate-500">The metrics update instantly. Check your word count and SEO limits.</p>
+        </div>
+        <div class="text-center">
+          <div class="step-circle mx-auto">3</div>
+          <h3 class="font-bold text-lg mb-2">Refine & Copy</h3>
+          <p class="text-slate-500">Use formatting tools to clean your text, then copy the result.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 border-y border-slate-100">
+      <div class="content-section">
+        <div class="mb-12">
+          <h2 class="text-3xl font-extrabold text-slate-900 mb-6">Premium Features for Copywriters</h2>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4 class="font-extrabold text-indigo-600 mb-2">Online Text Analysis</h4>
+              <p class="text-slate-500">Get deep insights into sentence structure and paragraph density to improve your writing flow.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="font-extrabold text-indigo-600 mb-2">SEO Content Checker</h4>
+              <p class="text-slate-500">Ensure your meta descriptions and titles are perfectly optimized for Google search results.</p>
+            </div>
+            <div class="feature-card">
+              <h4 class="font-extrabold text-indigo-600 mb-2">100% Privacy</h4>
+              <p class="text-slate-500">All analysis is performed client-side in your browser. Your text is never stored or uploaded.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- In-Content Ad Slot -->
+        <div class="ad-container ad-slot-content mt-20">
+           <div class="ad-label">ADVERTISEMENT</div>
+           <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="view-faq" class="view-section content-section">
+      <h2 class="text-3xl font-extrabold text-center mb-12">Expert Writing FAQ</h2>
+      <div class="space-y-4">
+        <details class="group bg-white border border-slate-200 rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center list-none">
+            Why is character counting important for SEO?
+            <span class="group-open:rotate-180 transition-transform duration-300">↓</span>
+          </summary>
+          <div class="mt-4 text-slate-600 leading-relaxed">Search engines like Google have specific pixel limits for titles and descriptions. By using an <strong>online character counter</strong>, you ensure your important keywords are visible in search results, which boosts your organic traffic.</div>
+        </details>
+        <details class="group bg-white border border-slate-200 rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center list-none">
+            How accurate is this word counter?
+            <span class="group-open:rotate-180 transition-transform duration-300">↓</span>
+          </summary>
+          <div class="mt-4 text-slate-600 leading-relaxed">TextCounter.pro uses professional regex algorithms to identify word boundaries across multiple languages, ensuring accuracy that matches or exceeds Microsoft Word and Google Docs.</div>
+        </details>
+        <details class="group bg-white border border-slate-200 rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center list-none">
+            How does paragraph density affect readability?
+            <span class="group-open:rotate-180 transition-transform duration-300">↓</span>
+          </summary>
+          <div class="mt-4 text-slate-600 leading-relaxed">High paragraph density (too much text without breaks) makes content difficult to scan and digest. For web writing, it is best to keep paragraphs under 3-4 sentences. Our <strong>online text analysis</strong> helps you monitor paragraph counts to maintain high engagement.</div>
+        </details>
+        <details class="group bg-white border border-slate-200 rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center list-none">
+            What is sentence complexity analysis?
+            <span class="group-open:rotate-180 transition-transform duration-300">↓</span>
+          </summary>
+          <div class="mt-4 text-slate-600 leading-relaxed">Sentence complexity refers to the length and grammatical structure of your sentences. Long, complex sentences can confuse readers. Aim for a mix of short and medium-length sentences to improve the rhythm and accessibility of your copywriting.</div>
+        </details>
+        <details class="group bg-white border border-slate-200 rounded-xl p-6 shadow-sm cursor-pointer">
+          <summary class="font-bold text-lg flex justify-between items-center list-none">
+            Does text structure impact SEO rankings?
+            <span class="group-open:rotate-180 transition-transform duration-300">↓</span>
+          </summary>
+          <div class="mt-4 text-slate-600 leading-relaxed">Indirectly, yes. Good structure (short paragraphs, clear sentences) improves dwell time and reduces bounce rates. Search engines prioritize content that provides a great user experience, making <strong>text analysis</strong> a vital part of your SEO strategy.</div>
+        </details>
+      </div>
+      <div class="mt-12 text-center">
+        <button onclick="switchView('tool')" class="bg-indigo-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-all">Back to Word Counter</button>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <div id="view-about" class="view-section content-section">
+       <h2 class="text-4xl font-black mb-8">About TextCounter.pro</h2>
+       <p class="text-lg text-slate-600 leading-relaxed mb-6">TextCounter.pro is a premium <strong>online text analysis</strong> utility built for the modern digital landscape. We empower writers, SEO specialists, and students with high-precision metrics that traditionally required expensive desktop software.</p>
+       <p class="text-lg text-slate-600 leading-relaxed">Inspired by the simplicity of high-traffic tools like ILovePDF, we focus on speed, privacy, and utility. No account required, no data stored—just professional counting at your fingertips.</p>
+       <div class="mt-12 text-center">
+        <button onclick="switchView('tool')" class="bg-indigo-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-all">Try the Tool Now</button>
+      </div>
+    </div>
+
+    <!-- TERMS OF USE SECTION -->
+    <div id="view-terms" class="view-section content-section">
+      <h2 class="text-4xl font-black mb-8">Terms of <span class="text-indigo-600">Use</span></h2>
+      <div class="space-y-8 text-slate-600 leading-relaxed">
+        <section>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">1. License to Use</h3>
+          <p>TextCounter.pro grants you a free, non-exclusive license to use this copywriting tool for personal, educational, or commercial purposes. You may not attempt to reverse engineer the underlying algorithms or scrape the service for automated gain.</p>
+        </section>
+        <section>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">2. Accuracy Disclaimer</h3>
+          <p>While we strive for 100% precision in our <strong>online character counter</strong> and word analysis, we provide the service "as is." We do not guarantee that the results are perfect for every edge case or specialized language format. We are not liable for any losses resulting from decisions based on our tool's metrics.</p>
+        </section>
+        <section>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">3. User Responsibility</h3>
+          <p>You are responsible for the content you input into the tool. We do not monitor or store your text, but you agree not to use our service for any illegal activities or to process content that violates the law. By using this tool, you acknowledge that your text remains your property and is processed only in your local browser environment.</p>
+        </section>
+        <section>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">4. Service Changes</h3>
+          <p>We reserve the right to modify or discontinue features of TextCounter.pro at any time without notice. We prioritize service stability and privacy in all updates.</p>
+        </section>
+      </div>
+      <div class="mt-12 text-center">
+        <button onclick="switchView('tool')" class="bg-indigo-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-all">I Agree, Return to Tool</button>
+      </div>
+    </div>
+
+    <!-- PRIVACY SECTION -->
+    <div id="view-privacy" class="view-section content-section">
+       <h2 class="text-4xl font-black mb-8">Privacy Policy</h2>
+       <p class="text-lg text-slate-600 leading-relaxed mb-6">Your content is your intellectual property. We do not use cookies to track your writing, and we never upload your text to our servers. All counting is done locally on your machine using advanced JavaScript.</p>
+       <p class="text-lg text-slate-600 leading-relaxed">Our site may use standard web analytics and advertising (Google AdSense) which may collect anonymized traffic data to help us sustain the service. No personal text data is shared.</p>
+       <div class="mt-12 text-center">
+        <button onclick="switchView('tool')" class="bg-indigo-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-all">Back to Word Counter</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-white border-t border-slate-200 py-16 mt-20">
+    <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">T</div>
+          <span class="text-xl font-extrabold tracking-tighter">TextCounter<span class="text-indigo-600">.pro</span></span>
+        </div>
+        <p class="text-slate-400 text-sm max-w-sm">The world's premium choice for free online character counting and high-traffic SEO writing tools.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-xs uppercase tracking-widest text-slate-400 mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm font-bold text-slate-600">
+          <li><button onclick="switchView('tool')" class="hover:text-indigo-600 transition-colors">Word Counter</button></li>
+          <li><button onclick="switchView('faq')" class="hover:text-indigo-600 transition-colors">Writing FAQ</button></li>
+          <li><button onclick="switchView('about')" class="hover:text-indigo-600 transition-colors">About Us</button></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-xs uppercase tracking-widest text-slate-400 mb-4">Legal</h4>
+        <ul class="space-y-2 text-sm font-bold text-slate-600">
+          <li><button onclick="switchView('privacy')" class="hover:text-indigo-600 transition-colors">Privacy Policy</button></li>
+          <li><button onclick="switchView('terms')" class="hover:text-indigo-600 transition-colors">Terms of Use</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 mt-16 pt-8 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center text-[10px] font-bold text-slate-300 uppercase tracking-widest gap-4">
+      <span>&copy; 2024 TextCounter.pro</span>
+      <span>Built for Professional Writers</span>
+    </div>
+  </footer>
+
+  <script>
+    window.switchView = function(viewId) {
+      document.querySelectorAll('.view-section').forEach(s => s.classList.remove('active'));
+      const target = document.getElementById('view-' + viewId);
+      if (target) {
+        target.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+  </script>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
